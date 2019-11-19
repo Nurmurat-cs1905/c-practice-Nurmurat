@@ -4,16 +4,16 @@ using namespace std;
     int main(){
     	int a,b,c,d,max=0;
     	cin>>a>>b>>c>>d;
-    	if(a%2==0&&a>b&&a>c&&a>d){
+    	if(a%2==0&&a>max){
 		max=a;
 		}
-		else if(b%2==0&&b>a&&b>c&&b>d){
+		else if(b%2==0&&b>max){
 		  max=b;
 		}
-		else if(c%2==0&&c>a&&c>b&&c>d){
+		else if(c%2==0&&c>max){
 			max=c;
 		}
-		else if(d%2==0&&d>a&&d>b&&d>>c){
+		else if(d%2==0&&d>max){
 			max=d;
 		}
 		else{ 
