@@ -2,21 +2,23 @@
 #include<cmath>
 using namespace std;
     int main(){
-    	int a,b,c,d;
+    	int a,b,c,d,max=0;
     	cin>>a>>b>>c>>d;
     	if(a%2==0&&a>b&&a>c&&a>d){
-		cout<<a;
+		max=a;
 		}
 		else if(b%2==0&&b>a&&b>c&&b>d){
-			cout<<b;
+		  max=b;
 		}
 		else if(c%2==0&&c>a&&c>b&&c>d){
-			cout<<c;
+			max=c;
 		}
 		else if(d%2==0&&d>a&&d>b&&d>>c){
-			cout<<d;
+			max=d;
 		}
-		else 
+		else{ 
 		cout<<"not found";
+		}
+	    cout<<max;
     return 0;
 	}
